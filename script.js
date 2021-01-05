@@ -5,12 +5,9 @@ var upperCase = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z";
 var numberChar = "0,1,2,3,4,5,6,7,8,9";
 var specialChar = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
 var passwordLength;
+var userInput;
 
-/*
-Array = []
-Object = {}
-Method = ()
-*/
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
@@ -28,32 +25,38 @@ function writePassword() {
     //write a function called generatePassword that will include a series of prompts
 function generatePassword() {
   console.log("Good to go")
-  let pass_length = prompt("How long do you need the password?")
+  var pass_length = prompt("How long do you need the password?")
   // Check if the users input is between 8 and 128 charaters
   if(parseInt(pass_length) > 8 && parseInt(pass_length) < 128){
-    alert("THIS IS A GOOD PASSWORD")
-    let possible = [];
-    let special = confirm("Do you need special characters?")
-    let capital = confirm("Do you need uppercase letters?")
-    let numbers = confirm("Do you need numbers in this password?")
-    let lower = confirm("Do you need Lowercase charaters?")
-    console.log(special,capital,numbers,lower)
-    let answers = {
+    alert("Good Password")
+    var possible = [];
+    var lower = confirm("Do you need lowercase characters?")
+    var upper = confirm("Do you need uppercase letters?")
+    var number = confirm("Do you need numbers?")
+    var special = confirm("Do you need special characters?")
+    console.log(lower, upper, number, special)
+    var answers = {
+      lower: lower,
+      upper: upper,
+      number: number,
       special: special,
-      capital: capital, 
-      numbers: numbers,
-      lower: lower
+
     }
-    // Go through the pbject keys and only show the ones that have a true value
+
+    // Go through the object keys and only show the ones that have a true value
     console.log(answers)
 
 
     // Create a password that is the same langth pass pass length
     // Generate a string equal to a langth
-  }else{
-    alert("You broke the rules")
+  }else {
+    alert("Insufficient Password")
   }
-} 
+ 
+}
+function getRandomLowerCase(){
+  
+}
       // WHEN prompted for password criteria
       // THEN I select which criteria to include in the password
 

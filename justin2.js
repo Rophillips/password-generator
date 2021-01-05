@@ -1,9 +1,0 @@
-/*
-String
-Boolean
-Integer
-
-
-Array
-Object
-*/
