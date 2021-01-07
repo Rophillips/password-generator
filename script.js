@@ -8,7 +8,7 @@ var passwordLength;
 var userInput;
 
 
-// Write password to the #password input
+  // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
       // WHEN I click the button to generate a password
@@ -24,39 +24,53 @@ function writePassword() {
     //**********************************************function here********************************************************* 
     //write a function called generatePassword that will include a series of prompts
 function generatePassword() {
-  console.log("Good to go")
+    //console.log("Good to go")
   var pass_length = prompt("How long do you need the password?")
-  // Check if the users input is between 8 and 128 charaters
+    // Check if the users input is between 8 and 128 charaters
   if(parseInt(pass_length) > 8 && parseInt(pass_length) < 128){
     alert("Good Password")
     var possible = [];
-    var lower = confirm("Do you need lowercase characters?")
-    var upper = confirm("Do you need uppercase letters?")
+    var lowerCase = confirm("Do you need lowercase characters?")
+    var upperCase = confirm("Do you need uppercase letters?")
     var number = confirm("Do you need numbers?")
     var special = confirm("Do you need special characters?")
-    console.log(lower, upper, number, special)
+    console.log(lowerCase, upperCase, number, special);
     var answers = {
-      lower: lower,
-      upper: upper,
+      lowerCase: lowerCase,
+      upperCase: upperCase,
       number: number,
       special: special,
 
-    }
+  }
 
+
+  
     // Go through the object keys and only show the ones that have a true value
     console.log(answers)
+  
 
-
-    // Create a password that is the same langth pass pass length
-    // Generate a string equal to a langth
+    // Create a password that is the same length pass pass length
+    // Generate a string equal to a length
   }else {
     alert("Insufficient Password")
   }
- 
+  if (lowerCase){
+    return password;
+  }
+
+  else if (upperCase){
+    return password;
+  }
+
+  else if (number){
+    return password;
+  }
+
+  else if (special){
+    return password;
+  }
 }
-function getRandomLowerCase(){
-  
-}
+
       // WHEN prompted for password criteria
       // THEN I select which criteria to include in the password
 
