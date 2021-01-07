@@ -21,14 +21,15 @@ function writePassword() {
 
 }
 
-    //**********************************************function here********************************************************* 
-    //write a function called generatePassword that will include a series of prompts
+  //**********************************************function here********************************************************* 
+  //write a function called generatePassword that will include a series of prompts
 function generatePassword() {
     //console.log("Good to go")
-  var pass_length = prompt("How long do you need the password?")
+  var pass_length = prompt("Please choose between 8 and 128 characters")
     // Check if the users input is between 8 and 128 charaters
   if(parseInt(pass_length) > 8 && parseInt(pass_length) < 128){
-    alert("Good Password")
+    alert("Sufficient")
+    
     var possible = [];
     var lowerCase = confirm("Do you need lowercase characters?")
     var upperCase = confirm("Do you need uppercase letters?")
@@ -40,41 +41,31 @@ function generatePassword() {
       upperCase: upperCase,
       number: number,
       special: special,
+    }
+    //for (var i = 0; i < passwordText.value; i++){
+    //  var passwordText = password[Math.floor(Math.random())]
+  //}
+  //work with this to generate random password - need to return passwordText value(line 20)
+    return "passwordText";
 
-  }
 
-
-  
     // Go through the object keys and only show the ones that have a true value
     console.log(answers)
-  
+
 
     // Create a password that is the same length pass pass length
     // Generate a string equal to a length
-  }else {
+  
+  }else  {
     alert("Insufficient Password")
   }
-  if (lowerCase){
-    return password;
-  }
 
-  else if (upperCase){
-    return password;
-  }
-
-  else if (number){
-    return password;
-  }
-
-  else if (special){
-    return password;
-  }
 }
+  
 
-      // WHEN prompted for password criteria
-      // THEN I select which criteria to include in the password
 
-      // WHEN prompted for the length of the password
+
+     // WHEN prompted for the length of the password
       // THEN I choose a length of at least 8 characters and no more than 128 characters
       // we have to ask the user how many characters they want in a password
       // we have to check and make sure between 8 and 128
@@ -99,3 +90,4 @@ function generatePassword() {
       //***********************************************function ends here***************************************************
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+

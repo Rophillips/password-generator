@@ -33,4 +33,3 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
-Screen Shot 2021-01-07 at 9.44.12 AM
