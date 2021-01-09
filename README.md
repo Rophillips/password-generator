@@ -14,9 +14,8 @@ Once the program has verified that the password length meets the minimum and max
 
 Once the user has generated a new password, there is a secondary function that allows the user to copy the newly generated password to their clipboard, in order to copy and paste it into another application, such as a text editor or web browser
 
-## Acceptance Criteria
+Acceptance Criteria
 
-```
 GIVEN I need a new, secure password
 WHEN I click the button to generate a password
 THEN I am presented with a series of prompts for password criteria
@@ -33,3 +32,4 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
+I could not figure out concatenate to only give random number to generate user's input.
