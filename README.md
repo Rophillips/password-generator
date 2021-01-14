@@ -32,4 +32,4 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
-I could not figure out concatenate to only give random number to generate user's input.
+![image](https://user-images.githubusercontent.com/74886597/104625097-59e69700-5662-11eb-91fd-c9bd7e8506ca.png)

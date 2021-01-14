@@ -23,7 +23,7 @@ function writePassword() {
 //write a function called generatePassword that will include a series of prompts
 function generatePassword() {
   //console.log("Good to go")
-  var pass_length = parseInt(prompt("Please choose between 8 and 128 characters"))
+  var pass_length = parseInt(prompt("Please choose between 8 and 128 characters"));
   // Check the user input
   if (pass_length > 8 && pass_length < 128) {
     alert("Sufficient")
@@ -74,7 +74,7 @@ function generatePassword() {
     // Add a random accepted charater to the random password
     outputPassword += randomPassword[Math.floor(Math.random() * randomPassword.length)]
   }
-  //could not figure out concatenate to generate password
+
 
   //work with this to generate random password - need to return passwordText value(line 20)
   //if (lowerCaseChar && upperCaseChar && numberChar && specialChar){
