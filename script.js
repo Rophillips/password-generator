@@ -69,15 +69,14 @@ function generatePassword() {
     randomPassword = lowerCaseChar.concat(upperCaseChar, numberChar, specialChar);
   }
 
-  //could not figure out for loop
+  // figured out for loop
   for (var i = pass_length; i > 0; i--) {
     // Add a random accepted charater to the random password
     outputPassword += randomPassword[Math.floor(Math.random() * randomPassword.length)]
   }
 
 
-  //work with this to generate random password - need to return passwordText value(line 20)
-  //if (lowerCaseChar && upperCaseChar && numberChar && specialChar){
+  
   return document.getElementById("password").value = outputPassword;
 }
 
